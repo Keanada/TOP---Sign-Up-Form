@@ -1,0 +1,46 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+}
+
+.main {
+    display: flex;
+    flex-direction:row;
+    flex: 1;
+}
+
+.left {
+    border-style: solid;
+    display: flex;
+    width: 35%;
+    flex-shrink: 0;
+  
+}
+
+.card {
+
+}
+.right {
+    padding-top: 148px;
+    padding-right: 240px;
+    /* padding: 148px 240px 522px 32px; */
+}
+
+.signUp {
+    display: flex;
+    border-style: solid;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+input {
+    width: auto;
+    
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    
+}
