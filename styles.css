@@ -44,8 +44,7 @@ body {
     align-items: center;
     justify-self: center;
 
-   
-  
+
 }
 
 .top {
@@ -53,13 +52,13 @@ body {
     padding-bottom: 2vh;
     padding-right: 2vw;
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     width: 50vw;
 }
 
 legend {
-    font-weight:600;
-    font-size: 1.3rem;
+    font-weight: 600;
+    font-size: 1.5rem;
 }
 
 .card {
@@ -75,13 +74,19 @@ legend {
 
     width:60vw;
     min-width: 35%;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: left;
 
 }
 
 .bottom {
     padding: 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
 }
 
 .signUp {
@@ -111,6 +116,7 @@ button {
     background-color: transparent;
     border-style: solid;
     padding: 0.7vw;
+    max-width: 10vw;
     font-size: 1.3rem;
     font-weight: 500;
 }
