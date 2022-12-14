@@ -1,8 +1,26 @@
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+
 body {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 1.3rem;
     min-height: 100vh;
     margin: 0;
     display: flex;
+    background-color:#FFFBF1;
 }
+
+.title {
+    font-size: 5rem;
+    color: white;
+
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .main {
     display: flex;
@@ -11,31 +29,65 @@ body {
 }
 
 .left {
-    border-style: solid;
     display: flex;
-    width: 35%;
+    min-width: 40vw;
     flex-shrink: 0;
+    background-image: url("./images/img1.jpg");
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-self: center;
+
+   
   
 }
 
-.card {
-
+.top {
+    padding-left: 38px;
+    padding-bottom: 38px;
+    padding-right: 240px;
+    font-weight: 700;
+    font-size: 1.8rem;
 }
+
+legend {
+    font-weight:6700;
+    font-size: 1.7rem;
+}
+
+.card {
+    background-color: white;
+    padding: 1.2rem 2vw 3rem 2vw;
+    filter: drop-shadow(0.2rem 0.5rem 0.5rem gray);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
 .right {
     padding-top: 148px;
     padding-right: 240px;
-    /* padding: 148px 240px 522px 32px; */
+    width:100vw;
+    min-width: 35%;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom {
+    padding: 38px;
 }
 
 .signUp {
     display: flex;
-    border-style: solid;
     flex-wrap: wrap;
     gap: 24px;
+    padding-right: 240px;
+    padding-top: 16px;
+    
 }
 
 input {
-    width: auto;
+    width: 240px;
     
 }
 
