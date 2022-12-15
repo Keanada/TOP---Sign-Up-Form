@@ -1,9 +1,6 @@
  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
 
- html {
-    height: 100vh;
-    width: 100vw;
- }
+
 body {
     font-family: 'Playfair Display', serif;
     color: #302a2a;
@@ -15,17 +12,19 @@ body {
     background-color:#FFFBF1;
 }
 
-.title {
-    font-size: 5rem;
-    color: white;
-
-    background-color: rgba(0,0,0,0.5);
-    width: 100%;
+.title,
+.left {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.title {
+    font-size: 5rem;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+}
 
 .main {
     display: flex;
@@ -39,10 +38,6 @@ body {
     flex-shrink: 0;
     background-image: url("./images/img1.jpg");
     background-size: cover;
-
-    display: flex;
-    align-items: center;
-    justify-self: center;
 }
 
 .top {
@@ -88,7 +83,7 @@ legend {
 form {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 1.2vw;
     padding-right: 3vw;
     padding-top: 16px;
     
@@ -96,7 +91,7 @@ form {
 
 input {
     width: 12vw;
-    height: 3vh;
+    height: 2.5vh;
     border: 0.121vw solid #212422; 
     border-radius: 4px;
 }
@@ -105,6 +100,7 @@ input {
     display: flex;
     flex-direction: column;
     font-weight: 400;
+    height:3.5vw;
     
 }
 
@@ -129,7 +125,7 @@ input:focus {
 }
 
 input:focus:invalid {
-    transition: 0.1s;
+    transition: 0.3s;
     filter: drop-shadow(0.2rem 0.5rem 0.5rem rgb(134, 100, 100));
     background-color:rgb(255, 172, 172);
     border-radius: 0px;
@@ -138,7 +134,6 @@ input:focus:invalid {
     border-radius: 3px;
 }
 
- 
 button:hover {
     background-color: #503c1f;
     transition: 0.5s;
@@ -150,13 +145,12 @@ text-decoration: none;
 font-weight: 700;
 }
 
-#passwordCheck,
-#fNameCheck,
-#lNameCheck,
-#phoneCheck,
-#emailCheck,
-#passMatch,
-#passError {
+a:hover {
+    transition: 0.5s;
+    color: #503c1f;
+}
+
+.errorMsg {
     color:rgb(97, 5, 5); 
     margin: 0; 
     padding: 0;
@@ -167,7 +161,6 @@ font-weight: 700;
 }
 
 #titleimg {
-    color: white;
     width: 6vw;
     filter:invert(100%)
 }

@@ -1,16 +1,12 @@
-
-
-let pass1Input = document.getElementById('passw');
-let pass2Input = document.getElementById('passwCheck');
-
-
 function checkPass() {
     let pass1 = document.getElementById('passw').value;
     let pass2 = document.getElementById('passwCheck').value;
+    let pass1Input = document.getElementById('passw');
+    let pass2Input = document.getElementById('passwCheck');
     if (pass1 != pass2) {
         console.log('HELLO');
-        pass1Input.style.cssText = "background-color: rgb(255, 172, 172);";
-        pass2Input.style.cssText = "background-color: rgb(255, 172, 172);";
+        pass1Input.style.cssText = "transition: 0.3s; background-color: rgb(255, 172, 172);";
+        pass2Input.style.cssText = "transition: 0.3s;background-color: rgb(255, 172, 172);";
         passMatch.textContent = "Passwords do not match ";
         
     }  else {
@@ -19,15 +15,13 @@ function checkPass() {
         pass2Input.style.cssText = "background-color: white; filter: drop-shadow(0 0 0 gray); border: 0.121vw solid #212422;";
         passMatch.textContent = "";
     }
-   
 }
+
 let fNameCheck = document.getElementById('fNameCheck');
 let lNameCheck = document.getElementById('lNameCheck');
 let phoneCheck = document.getElementById('phoneCheck');
 let emailCheck = document.getElementById('emailCheck');
 let passError = document.getElementById('passError');
-
-
 let fName = document.querySelector('#fName');
 let lName = document.querySelector('#lName');
 let email = document.querySelector('#email');
@@ -76,21 +70,3 @@ firstPass.addEventListener("input", function (event) {
 
 
 checkPass();
-
-
-// function checkInput() {
-//     if (fName == "") {
-//         fNameCheck.textContent = "First name is empty";
-//     } else {
-//         fNameCheck.textContent = "";
-//     }
-
-//     if (lNameCheck == "") {
-//         lNameCheck.textContent = "Last name is empty";
-//     } else {
-//         lNameCheck.textContent = "";
-//     }
-
-
-// }
-

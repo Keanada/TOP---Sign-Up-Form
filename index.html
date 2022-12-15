@@ -24,28 +24,28 @@
                 <legend>Let's get started!</legend>
             <form>
                     <div class="input">
-                        <label>First Name</label><input type="text" id="fName" required>
-                        <p id="fNameCheck"></p>
+                        <label>First Name</label><input type="text"  id="fName" required>
+                        <p id="fNameCheck" class="errorMsg"></p>
                     </div>
                     <div class="input">
                         <label>Last Name</label><input type="text" id="lName" required>
-                        <p id="lNameCheck"></p>
+                        <p id="lNameCheck" class="errorMsg"></p>
                     </div>
                     <div class="input">
                         <label>Email</label><input type="email" id="email" pattern="[a-z0-9._%+=]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-                        <p id="emailCheck"></p>
+                        <p id="emailCheck" class="errorMsg"></p>
                     </div>
                     <div class="input">
                         <label>Phone Number</label><input type="tel" id="phone" minlength="9" required>
-                        <p id="phoneCheck"></p>
+                        <p id="phoneCheck" class="errorMsg"></p>
                     </div>
                     <div class="input">
-                        <label>Password</label><input type="password"  id="passw" onkeyup="checkPass()" minlength="6" required>
-                        <p id="passError"></p>
+                        <label>Password</label><input type="password" id="passw" onkeyup="checkPass()" minlength="6" required>
+                        <p id="passError" class="errorMsg"></p>
                     </div>
                     <div class="input">
-                        <label>Confirm Password</label><input type="password"  id="passwCheck" onkeyup="checkPass()" minlength="6" title="Make sure the passwords match" required>
-                        <p id="passMatch"></p>
+                        <label>Confirm Password</label><input type="password" id="passwCheck" onkeyup="checkPass()" minlength="6" title="Make sure the passwords match" required>
+                        <p id="passMatch" class="errorMsg"></p>
                     </div>
                 
         </div>
