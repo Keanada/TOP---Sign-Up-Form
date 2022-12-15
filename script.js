@@ -1,13 +1,5 @@
 
 
-let fNameCheck = document.getElementById('fNameCheck');
-let lNameCheck = document.getElementById('lNameCheck');
-let phoneCheck = document.getElementById('phoneCheck');
-let emailCheck = document.getElementById('emailCheck');
-let passCheck = document.getElementById('passw');
-let passError = documnet.getElementById('passCheck');
-let passMatch = document.getElementById('passMatch');
-
 let pass1Input = document.getElementById('passw');
 let pass2Input = document.getElementById('passwCheck');
 
@@ -23,67 +15,64 @@ function checkPass() {
         
     }  else {
         console.log('PEE');
-        pass1Input.style.cssText = "background-color: white; filter: drop-shadow(0.2rem 0.5rem 0.5rem gray); border: 0.121vw solid #212422;";
-        pass2Input.style.cssText = "background-color: white; filter: drop-shadow(0.2rem 0.5rem 0.5rem gray); border: 0.121vw solid #212422;";
+        pass1Input.style.cssText = "background-color: white; filter: drop-shadow(0 0 0 gray); border: 0.121vw solid #212422;";
+        pass2Input.style.cssText = "background-color: white; filter: drop-shadow(0 0 0 gray); border: 0.121vw solid #212422;";
         passMatch.textContent = "";
     }
    
 }
-
+let fNameCheck = document.getElementById('fNameCheck');
+let lNameCheck = document.getElementById('lNameCheck');
+let phoneCheck = document.getElementById('phoneCheck');
+let emailCheck = document.getElementById('emailCheck');
+let passError = document.getElementById('passError');
 
 
 let fName = document.querySelector('#fName');
 let lName = document.querySelector('#lName');
 let email = document.querySelector('#email');
 let phone = document.querySelector('#phone');
-let passC = document.querySelector('#passw')
+let firstPass = document.querySelector('#passw');
 
 fName.addEventListener("input", function (event) {
     if (fName.value === "") {
-        fNameCheck.textContent = "Enter name";
+        fNameCheck.textContent = "Please enter your name";
     } else {
-        fNameCheck.textContent = ""
+        fNameCheck.textContent = "";
     }
-})
+});
 
 lName.addEventListener("input", function (event) {
     if (lName.value === "") {
-        lNameCheck.textContent = "Enter last name";
+        lNameCheck.textContent = "Please enter your last name";
     } else {
-        lNameCheck.textContent = ""
+        lNameCheck.textContent = "";
     }
-})
+});
 
 email.addEventListener("input", function (event) {
     if (email.value === "") {
-        emailCheck.textContent = "Enter email";
+        emailCheck.textContent = "Please enter an email";
     } else {
-        emailCheck.textContent = ""
+        emailCheck.textContent = "";
     }
-})
+});
 
 phone.addEventListener("input", function (event) {
     if (phone.value === "") {
-        phoneCheck.textContent = "Enter phone number";
+        phoneCheck.textContent = "Please enter phone number";
     } else {
-        phoneCheck.textContent = ""
+        phoneCheck.textContent = "";
     }
-})
-phone.addEventListener("input", function (event) {
-    if (phone.value === "") {
-        phoneCheck.textContent = "Enter phone number";
-    } else {
-        phoneCheck.textContent = ""
-    }
-})
+});
 
-passC.addEventListener("input", function (event) {
-    if (passC.value === "") {
-        passError.textContent = "Enter phone number";
+firstPass.addEventListener("input", function (event) {
+    if (firstPass.value === "") {
+        passError.textContent = "Please enter a password";
     } else {
         passError.textContent = "";
     }
-})
+});
 
 
 checkPass();
