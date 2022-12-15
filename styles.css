@@ -43,12 +43,10 @@ body {
     display: flex;
     align-items: center;
     justify-self: center;
-
-
 }
 
 .top {
-    padding-left: 38px;
+    padding-left: 2vw;
     padding-bottom: 2vh;
     padding-right: 2vw;
     font-weight: 700;
@@ -71,9 +69,7 @@ legend {
 
 .right {
     padding-top: 10vh;
-
-    width:60vw;
-    min-width: 35%;
+    min-width:60vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -132,7 +128,7 @@ input:focus {
     border: 0.121vw solid #212422; 
 }
 
-input:focus:invalid:required {
+input:focus:invalid {
     transition: 0.1s;
     filter: drop-shadow(0.2rem 0.5rem 0.5rem rgb(134, 100, 100));
     background-color:rgb(255, 172, 172);
@@ -154,7 +150,13 @@ text-decoration: none;
 font-weight: 700;
 }
 
-#passwordCheck {
+#passwordCheck,
+#fNameCheck,
+#lNameCheck,
+#phoneCheck,
+#emailCheck,
+#passMatch
+#passCheck {
     color:rgb(97, 5, 5); 
     margin: 0; 
     padding: 0;

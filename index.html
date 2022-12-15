@@ -24,29 +24,33 @@
                 <legend>Let's get started!</legend>
             <form>
                     <div class="input">
-                        <label>First Name</label><input type="text" required>
+                        <label>First Name</label><input type="text" id="fName" required>
+                        <p id="fNameCheck"></p>
                     </div>
                     <div class="input">
-                        <label>Last Name</label><input type="text" required>
+                        <label>Last Name</label><input type="text" id="lName" required>
+                        <p id="lNameCheck"></p>
                     </div>
                     <div class="input">
-                        <label>Email</label><input type="email" pattern="[a-z0-9._%+=]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                        <label>Email</label><input type="email" id="email" pattern="[a-z0-9._%+=]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                        <p id="emailCheck"></p>
                     </div>
                     <div class="input">
-                        <label>Phone Number</label><input type="tel" minlength="9" required>
+                        <label>Phone Number</label><input type="tel" id="phone" minlength="9" required>
+                        <p id="phoneCheck"></p>
                     </div>
                     <div class="input">
-                        <label>Password</label><input type="password"  id="pass1" onkeyup="checkPass()" minlength="6" required>
+                        <label>Password</label><input type="password"  id="passw" onkeyup="checkPass()" minlength="6" required>
+                        <p id="passCheck"></p>
                     </div>
                     <div class="input">
-                        <label>Confirm Password</label><input type="password"  id="pass2" onkeyup="checkPass()" minlength="6" title="Make sure the passwords match" required>
-                        
+                        <label>Confirm Password</label><input type="password"  id="passwCheck" onkeyup="checkPass()" minlength="6" title="Make sure the passwords match" required>
+                        <p id="passMatch"></p>
                     </div>
-                    <p id="passwordCheck"></p>
                 
         </div>
             <div class="bottom">
-                <button type="submit">Create Account</button>
+                <button type="submit" onclick="checkInput()">Create Account</button>
             </form>
                 <p>Already have an account? <a href="">Log in</a></p>
             </div>
