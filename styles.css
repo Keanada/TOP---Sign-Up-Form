@@ -93,15 +93,15 @@ form {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    padding-right: 140px;
+    padding-right: 3vw;
     padding-top: 16px;
     
 }
 
 input {
-    width: 11vw;
+    width: 12vw;
     height: 3vh;
-    border-color:#212422;
+    border: 0.121vw solid #212422; 
     border-radius: 4px;
 }
 
@@ -117,8 +117,8 @@ button {
     background-color: #b38746;
     border-style: solid;
     border-color:#503c1f;
-    padding: 0.7vw;
-    max-width: 10vw;
+    padding: 1vw;
+    max-width: 13vw;
     font-size: 1.3rem;
     font-weight: 600;
     color: #fff2d1;
@@ -127,7 +127,9 @@ button {
 
 input:focus {
     filter: drop-shadow(0.2rem 0.5rem 0.5rem gray);
-    border-radius: 0px;
+    border-radius: 3px;
+    outline: none;
+    border: 0.121vw solid #212422; 
 }
 
 input:focus:invalid:required {
@@ -153,8 +155,16 @@ font-weight: 700;
 }
 
 #passwordCheck {
-    margin: 0;
+    color:rgb(97, 5, 5); 
+    margin: 0; 
     padding: 0;
     display: flex;
     align-items: flex-end;
+    font-size: 0.8rem;
+}
+
+#titleimg {
+    color: white;
+    width: 6vw;
+    filter:invert(100%)
 }

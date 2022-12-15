@@ -15,8 +15,8 @@ function checkPass() {
         
     }  else {
         console.log('PEE');
-        pass1Input.style.cssText = "background-color: white";
-        pass2Input.style.cssText = "background-color: white; filter: drop-shadow(0.2rem 0.5rem 0.5rem gray);";
+        pass1Input.style.cssText = "background-color: white; filter: drop-shadow(0.2rem 0.5rem 0.5rem gray); border: 0.121vw solid #212422;";
+        pass2Input.style.cssText = "background-color: white; filter: drop-shadow(0.2rem 0.5rem 0.5rem gray); border: 0.121vw solid #212422;";
         passP.textContent = "";
     }
    
