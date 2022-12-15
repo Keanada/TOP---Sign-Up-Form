@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" DEFER></script>
     <title>Sign Up Form</title>
 </head>
 <body>
@@ -16,34 +17,37 @@
             <div class="top">
                 This is not a real online service! You know you need something like this in your life to help you realize
                 your deepest dreams. Sign up now to get started.
-                <p>You know you want to.</p>
+                <p>You <i>know</i> you want to.</p>
             </div>
             <div class='card'>
                 <legend>Let's get started!</legend>
-            <div class="signUp">
+            <form>
                     <div class="input">
-                        <label>First Name</label><input type="text">
+                        <label>First Name</label><input type="text" required>
                     </div>
                     <div class="input">
-                        <label>Last Name</label><input type="text">
+                        <label>Last Name</label><input type="text" required>
                     </div>
                     <div class="input">
-                        <label>Email</label><input type="email">
+                        <label>Email</label><input type="email" pattern="[a-z0-9._%+=]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                     </div>
                     <div class="input">
-                        <label>Phone Number</label><input type="tel">
+                        <label>Phone Number</label><input type="tel" minlength="9" required>
                     </div>
                     <div class="input">
-                        <label>Password</label><input type="password">
+                        <label>Password</label><input type="password"  id="pass1" onkeyup="checkPass()" minlength="6" required>
                     </div>
                     <div class="input">
-                        <label>Confirm Password</label><input type="password">
+                        <label>Confirm Password</label><input type="password"  id="pass2" onkeyup="checkPass()" minlength="6" title="Make sure the passwords match" required>
+                        
                     </div>
-                </div>
+                    <p id="passwordCheck"></p>
+                
         </div>
             <div class="bottom">
-                <button>Create Account</button>
-                <p>Already have an account? Log in</p>
+                <button type="submit">Create Account</button>
+            </form>
+                <p>Already have an account? <a href="">Log in</a></p>
             </div>
         </div>
 
