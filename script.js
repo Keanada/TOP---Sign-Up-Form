@@ -23,6 +23,7 @@ function checkPass() {
         passwordInput.style.cssText = errorStyle;
         passConfirmInput.style.cssText = errorStyle;
         passMatch.textContent = "Passwords do not match ";
+        return false;
     } else {
         passwordInput.style.cssText = inputStyle;
         passConfirmInput.style.cssText = inputStyle;
