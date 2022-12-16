@@ -12,7 +12,8 @@
     <div class="main">
         <div class="left">
             <div class="title">
-                <img src="./images/code_blocks_FILL0_wght400_GRAD0_opsz48.svg" id="titleimg">odin</div>
+                <img src="./images/code_blocks_FILL0_wght400_GRAD0_opsz48.svg" id="titleimg">odin
+            </div>
         </div>
         <div class="right">
             <div class="top">
@@ -47,10 +48,9 @@
                         <label>Confirm Password</label><input type="password" id="passwCheck" onkeyup="checkPass()" minlength="6" title="Make sure the passwords match" required>
                         <p id="passMatch" class="errorMsg"></p>
                     </div>
-                
         </div>
             <div class="bottom">
-                <button type="submit" onclick="checkInput()">Create Account</button>
+                <button type="submit" onclick="return checkPass()" method="post">Create Account</button>
             </form>
                 <p>Already have an account? <a href="">Log in</a></p>
             </div>

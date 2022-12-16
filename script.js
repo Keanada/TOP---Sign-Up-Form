@@ -1,32 +1,34 @@
-function checkPass() {
-    let pass1 = document.getElementById('passw').value;
-    let pass2 = document.getElementById('passwCheck').value;
-    let pass1Input = document.getElementById('passw');
-    let pass2Input = document.getElementById('passwCheck');
-    if (pass1 != pass2) {
-        console.log('HELLO');
-        pass1Input.style.cssText = "transition: 0.3s; background-color: rgb(255, 172, 172);";
-        pass2Input.style.cssText = "transition: 0.3s;background-color: rgb(255, 172, 172);";
-        passMatch.textContent = "Passwords do not match ";
-        
-    }  else {
-        console.log('PEE');
-        pass1Input.style.cssText = "background-color: white; filter: drop-shadow(0 0 0 gray); border: 0.121vw solid #212422;";
-        pass2Input.style.cssText = "background-color: white; filter: drop-shadow(0 0 0 gray); border: 0.121vw solid #212422;";
-        passMatch.textContent = "";
-    }
-}
+let errorStyle = "transition: 0.3s; background-color: rgb(255, 172, 172);";
+let inputStyle = "background-color: white; filter: drop-shadow(0 0 0 gray); border: 0.121vw solid #212422;";
 
 let fNameCheck = document.getElementById('fNameCheck');
 let lNameCheck = document.getElementById('lNameCheck');
 let phoneCheck = document.getElementById('phoneCheck');
 let emailCheck = document.getElementById('emailCheck');
 let passError = document.getElementById('passError');
+
 let fName = document.querySelector('#fName');
 let lName = document.querySelector('#lName');
 let email = document.querySelector('#email');
 let phone = document.querySelector('#phone');
 let firstPass = document.querySelector('#passw');
+
+function checkPass() {
+    let password = document.getElementById('passw').value;
+    let passConfirm = document.getElementById('passwCheck').value;
+    let passwordInput = document.getElementById('passw');
+    let passConfirmInput = document.getElementById('passwCheck');
+
+    if (password != passConfirm) {
+        passwordInput.style.cssText = errorStyle;
+        passConfirmInput.style.cssText = errorStyle;
+        passMatch.textContent = "Passwords do not match ";
+    } else {
+        passwordInput.style.cssText = inputStyle;
+        passConfirmInput.style.cssText = inputStyle;
+        passMatch.textContent = "";
+    }
+}
 
 fName.addEventListener("input", function (event) {
     if (fName.value === "") {
@@ -67,6 +69,5 @@ firstPass.addEventListener("input", function (event) {
         passError.textContent = "";
     }
 });
-
 
 checkPass();
