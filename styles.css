@@ -36,6 +36,9 @@ body {
   flex: 1;
 }
 
+.sidebar {
+  display: flex;
+}
 .left {
   display: flex;
   min-width: 40vw;
